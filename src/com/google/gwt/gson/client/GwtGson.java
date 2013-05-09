@@ -15,7 +15,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
  */
-public class GsonDemo implements EntryPoint {
+public class GwtGson implements EntryPoint {
 
 	private GwtGsonServiceAsync gwtGsonService = GWT
 			.create(GwtGsonService.class);

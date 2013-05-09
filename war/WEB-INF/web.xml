@@ -3,11 +3,11 @@
   <!-- Servlets -->
   <servlet>
   	<servlet-name>GwtGsonService</servlet-name>
-  	<servlet-class>com.example.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
+  	<servlet-class>com.google.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>GwtGsonService</servlet-name>
-  	<url-pattern>/gsondemo/gwtGsonService</url-pattern>
+  	<url-pattern>/bgwtgson/gwtGsonService</url-pattern>
   </servlet-mapping>
   
   <!-- Default page to serve -->
