@@ -3,10 +3,9 @@
  */
 package com.google.gwt.gson.server;
 
-import java.io.Serializable;
-
 import com.google.gson.Gson;
 import com.google.gwt.gson.shared.GwtGsonService;
+import com.google.gwt.user.client.rpc.IsSerializable;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
@@ -29,12 +28,12 @@ public class GwtGsonServiceImpl extends RemoteServiceServlet implements
 	}
 
 	@Override
-	public String toJson(Serializable obj) {
+	public String toJson(IsSerializable obj) {
 		return gson.toJson(obj);
 	}
 
 	@Override
-	public Serializable fromJson(String json, Serializable type) {
-		return gson.fromJson(json, type.getClass());
+	public IsSerializable fromJson(String json, IsSerializable type) {
+		return (IsSerializable) gson.fromJson(json, type.getClass());
 	}
 }

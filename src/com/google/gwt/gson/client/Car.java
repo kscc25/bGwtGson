@@ -5,11 +5,13 @@ package com.google.gwt.gson.client;
 
 import java.io.Serializable;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 /**
  * @author heroandtn3
  * 
  */
-public class Car implements Serializable {
+public class Car implements Serializable, IsSerializable {
 
 	/**
 	 * 

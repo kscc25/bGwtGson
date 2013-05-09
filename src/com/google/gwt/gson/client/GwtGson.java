@@ -1,7 +1,5 @@
 package com.google.gwt.gson.client;
 
-import java.io.Serializable;
-
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -9,6 +7,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.gson.shared.GwtGsonService;
 import com.google.gwt.gson.shared.GwtGsonServiceAsync;
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.rpc.IsSerializable;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.RootPanel;
 
@@ -55,14 +54,14 @@ public class GwtGson implements EntryPoint {
 			@Override
 			public void onClick(ClickEvent event) {
 				
-				gwtGsonService.fromJson(json, new Car(), new AsyncCallback<Serializable>() {
+				gwtGsonService.fromJson(json, new Car(), new AsyncCallback<IsSerializable>() {
 
 					@Override
 					public void onFailure(Throwable caught) {
 					}
 
 					@Override
-					public void onSuccess(Serializable result) {
+					public void onSuccess(IsSerializable result) {
 						if (result != null) {
 							Car u = (Car) result;
 							System.out.println("Car's name is: " + u.getName());

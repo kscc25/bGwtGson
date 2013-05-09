@@ -3,9 +3,8 @@
  */
 package com.google.gwt.gson.shared;
 
-import java.io.Serializable;
-
 import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
  * @author heroandtn3
@@ -13,10 +12,10 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
  */
 public interface GwtGsonServiceAsync {
 
-	void fromJson(String json, Serializable objType,
-			AsyncCallback<Serializable> callback);
+	void fromJson(String json, IsSerializable objType,
+			AsyncCallback<IsSerializable> callback);
 
-	void toJson(Serializable src, AsyncCallback<String> callback);
+	void toJson(IsSerializable src, AsyncCallback<String> callback);
 
 
 }
