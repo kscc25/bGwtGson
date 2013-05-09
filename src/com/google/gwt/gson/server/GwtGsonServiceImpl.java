@@ -1,12 +1,12 @@
 /**
  * 
  */
-package com.example.gwt.gson.server;
+package com.google.gwt.gson.server;
 
 import java.io.Serializable;
 
-import com.example.gwt.gson.shared.GwtGsonService;
 import com.google.gson.Gson;
+import com.google.gwt.gson.shared.GwtGsonService;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**

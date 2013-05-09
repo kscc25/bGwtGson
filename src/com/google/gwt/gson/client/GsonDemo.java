@@ -1,13 +1,13 @@
-package com.example.gwt.gson.client;
+package com.google.gwt.gson.client;
 
 import java.io.Serializable;
 
-import com.example.gwt.gson.shared.GwtGsonService;
-import com.example.gwt.gson.shared.GwtGsonServiceAsync;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
+import com.google.gwt.gson.shared.GwtGsonService;
+import com.google.gwt.gson.shared.GwtGsonServiceAsync;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.RootPanel;

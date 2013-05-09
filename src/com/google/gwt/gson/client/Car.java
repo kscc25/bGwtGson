@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.example.gwt.gson.client;
+package com.google.gwt.gson.client;
 
 import java.io.Serializable;
 
