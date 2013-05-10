@@ -80,12 +80,12 @@ public class GwtGson implements EntryPoint {
 
 					@Override
 					public void onSuccess(IsSerializable result) {
-						if (result != null) {
+						if (result != null && result instanceof Car) {
 							Car u = (Car) result;
 							System.out.println("Car's name is: " + u.getName());
 							
 						} else {
-							System.out.println("nullll");
+							System.out.println("null");
 						}
 						
 					}
