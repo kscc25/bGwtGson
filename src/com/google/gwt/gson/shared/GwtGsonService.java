@@ -32,7 +32,22 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 
 @RemoteServiceRelativePath("gwtGsonService")
 public interface GwtGsonService extends RemoteService {
+	
+	/**
+	 * This method serializes the specified object into its 
+	 * equivalent Json representation.
+	 * @param src the object for which Json representation 
+	 * is to be created setting for Gson
+	 * @return Json representation of {@code src}.
+	 */
 	public String toJson(IsSerializable src);
 
+	/**
+	 * This method deserializes the specified Json into 
+	 * an object of the specified class.
+	 * @param json the string from which the object is to be deserialized
+	 * @param objType an "empty" object to send object type via RPC
+	 * @return an IsSerializable object of type of objType from the string
+	 */
 	public IsSerializable fromJson(String json, IsSerializable objType);
 }
