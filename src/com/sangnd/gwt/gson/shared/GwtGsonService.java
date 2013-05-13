@@ -19,7 +19,7 @@
 /**
  * 
  */
-package com.google.gwt.gson.shared;
+package com.sangnd.gwt.gson.shared;
 
 import com.google.gwt.user.client.rpc.IsSerializable;
 import com.google.gwt.user.client.rpc.RemoteService;

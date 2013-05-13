@@ -3,7 +3,7 @@
   <!-- Servlets -->
   <servlet>
   	<servlet-name>GwtGsonService</servlet-name>
-  	<servlet-class>com.google.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
+  	<servlet-class>com.sangnd.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>GwtGsonService</servlet-name>

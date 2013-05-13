@@ -20,7 +20,7 @@
   <!-- Other module inherits                                      -->
 
   <!-- Specify the app entry point class.                         -->
-  <entry-point class='com.google.gwt.gson.client.GwtGson'/>
+  <entry-point class='com.sangnd.gwt.gson.client.GwtGson'/>
 
   <!-- Specify the paths for translatable code                    -->
   <source path='client'/>

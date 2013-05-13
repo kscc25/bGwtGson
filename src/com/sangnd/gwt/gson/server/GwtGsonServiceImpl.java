@@ -19,21 +19,39 @@
 /**
  * 
  */
-package com.google.gwt.gson.shared;
+package com.sangnd.gwt.gson.server;
 
-import com.google.gwt.user.client.rpc.AsyncCallback;
+import com.google.gson.Gson;
 import com.google.gwt.user.client.rpc.IsSerializable;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+import com.sangnd.gwt.gson.shared.GwtGsonService;
 
 /**
  * @author heroandtn3
  * 
  */
-public interface GwtGsonServiceAsync {
+public class GwtGsonServiceImpl extends RemoteServiceServlet implements
+		GwtGsonService {
 
-	void fromJson(String json, IsSerializable objType,
-			AsyncCallback<IsSerializable> callback);
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Gson gson = new Gson();
 
-	void toJson(IsSerializable src, AsyncCallback<String> callback);
+	/**
+	 * 
+	 */
+	public GwtGsonServiceImpl() {
+	}
 
+	@Override
+	public String toJson(IsSerializable obj) {
+		return gson.toJson(obj);
+	}
 
+	@Override
+	public IsSerializable fromJson(String json, IsSerializable type) {
+		return (IsSerializable) gson.fromJson(json, type.getClass());
+	}
 }

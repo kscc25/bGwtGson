@@ -16,18 +16,18 @@
  * along with bGwtGson.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.google.gwt.gson.client;
+package com.sangnd.gwt.gson.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
-import com.google.gwt.gson.shared.GwtGsonService;
-import com.google.gwt.gson.shared.GwtGsonServiceAsync;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.IsSerializable;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.sangnd.gwt.gson.shared.GwtGsonService;
+import com.sangnd.gwt.gson.shared.GwtGsonServiceAsync;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.

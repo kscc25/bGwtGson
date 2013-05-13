@@ -19,7 +19,7 @@
 /**
  * 
  */
-package com.google.gwt.gson.client;
+package com.sangnd.gwt.gson.client;
 
 import java.io.Serializable;
 
