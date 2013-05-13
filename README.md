@@ -13,7 +13,7 @@ Download from [here](http://sourceforge.net/projects/bgwtgson/) then add to your
 Add this to your `Module.gwt.xml`:
 
 ```XML
-<inherits name="com.google.gwt.gson.GwtGson" />
+<inherits name="com.sangnd.gwt.gson.GwtGson" />
 ```
 
 ### Step 2: Web.xml
@@ -23,7 +23,7 @@ Add this to your `web.xml`:
 ```XML
 <servlet>
 	<servlet-name>GwtGsonService</servlet-name>
-	<servlet-class>com.google.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
+	<servlet-class>com.sangnd.gwt.gson.server.GwtGsonServiceImpl</servlet-class>
 </servlet>
 <servlet-mapping>
 	<servlet-name>GwtGsonService</servlet-name>
@@ -33,7 +33,7 @@ Add this to your `web.xml`:
 
 ## Usage
 
-Your object class must be implemented `IsSerializable` interface like [this example](src/com/google/gwt/gson/client/Car.java).
+Your object class must be implemented `IsSerializable` interface like [this example](src/com/sangnsangnd/gwt/gson/client/Car.java).
 
 Create `GwtGsonServiceAsync` instance:
 
