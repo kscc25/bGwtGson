@@ -8,7 +8,11 @@ Download from [here](http://sourceforge.net/projects/bgwtgson/) then add to your
 
 ## Setup
 
-### Step 1: Module
+### Step 1: Add Gson to your lib folder
+
+Download [Gson](https://github.com/heroandtn3/bGwtGson/raw/master/lib/gson/gson-2.2.3.jar) then add to you `WEB-INF/lib` folder.
+
+### Step 2: Module
 
 Add this to your `Module.gwt.xml`:
 
@@ -16,7 +20,7 @@ Add this to your `Module.gwt.xml`:
 <inherits name="com.sangnd.gwt.gson.GwtGson" />
 ```
 
-### Step 2: Web.xml
+### Step 3: Web.xml
 
 Add this to your `web.xml`:
 
