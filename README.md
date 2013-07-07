@@ -37,7 +37,7 @@ Add this to your `web.xml`:
 
 ## Usage
 
-Your object class must be implemented `IsSerializable` interface like [this example](src/com/sangnsangnd/gwt/gson/client/Car.java).
+Your object class must be implemented `IsSerializable` interface like [this example](src/com/sangnd/gwt/gson/client/Car.java).
 
 Create `GwtGsonServiceAsync` instance:
 
